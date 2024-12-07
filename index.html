@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('your-image-path.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* شبه شفاف */
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.5); /* الشفافية للخلفية */
+            color: #333;
+            font-size: 14px;
+        }
+        input[type="password"]:focus {
+            background-color: rgba(255, 255, 255, 0.7); /* عند التركيز تزداد الشفافية */
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* اللون الأزرق */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* اللون الأزرق عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reset Your Password</h2>
+        <form action="your-reset-password-url" method="POST">
+            <label for="old-password">Old Password</label>
+            <input type="password" id="old-password" name="old-password" placeholder="Enter your old password" required>
+            
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" name="new-password" placeholder="Enter your new password" required>
+            
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your new password" required>
+            
+            <input type="submit" value="Reset Password">
+        </form>
+    </div>
+</body>
+</html>
